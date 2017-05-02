@@ -1,22 +1,18 @@
-class DiscountCalc 
-{
-	private:
+#pragma once
+//Dylan Sanderson
+//CPSC 121 1:00-1:50 PM
+//header file
 
-		float price;
-		float dollarsOff;
-		float discountPerc;
-		float additionalPerc;
-		float tax;
-
-	public:
-
-		float originalPrice(DiscountCalc);
-
-	
-		float discountedPrice(DiscountCalc);
-
-
-		DiscountCalc displayMenu();
+class DiscountCalc {
+public:
+	DiscountCalc();
+	float originalPrice();
+	float discountedPrice();
+	void displayMenu();
+	float price;
+	int dollarsOff;
+	int discountPerc;
+	int additionalPerc;
+	float tax;
 
 };
-
